@@ -69,13 +69,33 @@
             });
             setTimeout(n.close.bind(n), 3000); //close notification after 3 seconds
         }
-        
+
         /*************
         Note about actions param - used with webworkers/serviceworkers
         actions: [
         {action: 'mail', title: 'e-mail', icon: './img/envelope-closed-lg.png'},
         {action: 'blastoff', title: 'Blastoff', icon: './img/rocket-lg.png'}]
         *********************/
+
+
+        navigator.serviceWorker.register('./sw.js');
+
+        showNotification();
+
+        function showNotification() {
+        Notification.requestPermission(function(result) {
+            if (result === 'granted') {
+            navigator.serviceWorker.ready.then(function(registration) {
+                registration.showNotification('Vibration Sample', {
+                body: 'Buzz! Buzz!',
+                icon: '../images/touch/chrome-touch-icon-192x192.png',
+                vibrate: [200, 100, 200, 100, 200, 100, 200],
+                tag: 'vibration-sample'
+                });
+            });
+            }
+        });
+        }
 
     </script>
 
