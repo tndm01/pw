@@ -18,7 +18,20 @@ self.addEventListener('push', function (e) {
             },
         ]
     };
-    e.waitUntil(
-        self.registration.showNotification('Hello world!', options)
-    );
+
+    self.clients.matchAll().then(function (clientList) {
+
+        var focused = clientList.some(function (client) {
+          return client.focused;
+        });
+  
+        return self.registration.showNotification('ServiceWorker Cookbook', {
+          body: options,
+        });
+  
+      })
+
+    // e.waitUntil(
+    //     self.registration.showNotification('Hello world!', options)
+    // );
 });

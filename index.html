@@ -17,12 +17,6 @@
         })
 
         async function subscribe() {
-
-            if ((await clients.matchAll()).length < 2) {
-                console.log('Clients: ', 2);
-            }
-
-
             let sw = await navigator.serviceWorker.ready;
             let push = await sw.pushManager.subscribe({
                 userVisibleOnly: true,
