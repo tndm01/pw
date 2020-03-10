@@ -26,7 +26,7 @@ self.addEventListener('push', function (e) {
         });
   
         return self.registration.showNotification('ServiceWorker Cookbook', {
-          body: options,
+          body: "ANH NHAN DEP TRAI",
         });
   
       })
