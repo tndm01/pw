@@ -7,12 +7,12 @@ push.setVapidDetails('mailto:test@code.com', vapidKeys.publicKey, vapidKeys.priv
 
 let sub = {
     endpoint:
-        "https://fcm.googleapis.com/fcm/send/crsa2GefmB8:APA91bF4LVy6TfH5LMAfj7Q0RrB1poIP63y3WpJ-aiQa_LCwTQqzNnKxG5h9LboWbnBgfZ5yChVXhCGLYHRXRdT_gbrD7WvrnslPLk0cf1qAGD8gucdFe4UzX6GN8VwnA3K3dsOKisXJ",
+        "https://fcm.googleapis.com/fcm/send/dL1dZwtUenI:APA91bGoWFUd1XRnqyYMSkegFIuOFosYwwzYr3UyCU8yy7snN5C1sbt1FtcN4iTXAyXCri2VsuZq00dwycksMtaIAuQP9cA4-SNJL47fEPI4kdTRcSeT7h24BHrRXCQ10r0a1h9pPcpa",
     expirationTime: null,
     keys: {
         p256dh:
-            "BAHyu-JRFwblhh9Dx4OCLagMBQG1AXrkAp4GCa4fvEt_7yvb6KDZzFhaWRNKec2uGReyY7wuyvZ_L91aQ4za8fU",
-        auth: "OKYZu5WsdlSbh6R2oKF7JA"
+            "BPkerhxzemqKMAt0_CcVp9kBo9MkYeC9Sv7MkkhCV71NsVU-RI2gboeJYe-5JpTswZ_kPgZKF1WDcDCYR9ty8M0",
+        auth: "-OlgjAnz-VKjl8CgezM8NA"
     }
 };
 
