@@ -14,5 +14,5 @@ let sub = {
     }
 };
 
-
-push.sendNotification(sub, 'test message')
+console.log('TEST');
+push.sendNotification(sub, 'test message');
