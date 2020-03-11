@@ -1,7 +1,7 @@
 var push = require('web-push');
 let vapidKeys = {
-    publicKey: 'BGBKWEaxRcP5S9k61GvnqGdmkFFeYGtGNRUvTFLvpnYEoL3ehqonnEDB48OtLrH76T5NhuZNYWcrQjMMhRl1iaA',
-    privateKey: '143oNcKqqaex1uPjVwZ06Lo-prLYtOeRNOnMJS0YzIY'
+    publicKey: 'BBAQXM9gNxGSkaeYn4Tq27FTYdX8l52097mfettqHbiDd2fCmUwaiDoTFVScqJEljdU8K0PTGp9PeD3fW9eT2x8',
+    privateKey: 'SUUU_KK8d30vWQxqTxt7eWJI8zeIwm_FRVhiPnfvj4k'
 }
 push.setVapidDetails('mailto:test@code.com', vapidKeys.publicKey, vapidKeys.privateKey)
 
