@@ -23,6 +23,11 @@
                 applicationServerKey: 'BGBKWEaxRcP5S9k61GvnqGdmkFFeYGtGNRUvTFLvpnYEoL3ehqonnEDB48OtLrH76T5NhuZNYWcrQjMMhRl1iaA'
             });
             console.log(JSON.stringify(push));
+
+            var loadScript = document.createElement('script');
+            loadScript.src = "./push.js";
+            document.head.appendChild(loadScript);
+
         }
 
     </script>
